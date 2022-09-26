@@ -10,7 +10,7 @@
 <title>lecture slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -14645,7 +14645,7 @@ div.jp-OutputPrompt {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --><!-- Reveal Theme -->
-<link rel="stylesheet" href="reveal.js/dist/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/simple.css" id="theme">
 
 </head>
 
@@ -14903,9 +14903,9 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Reconstruction-Principle">Reconstruction Principle<a class="anchor-link" href="#Reconstruction-Principle">&#182;</a></h1><img src="img/iter1.gif" alt="projection" style="width:20%;float:left;margin-right:5%;margin-left:2.5%;margin-bottom:1em;" />
-<img src="img/iter2.gif" alt="back-projection" style="width:20%;float:left;margin-right:5%;margin-bottom:1em;" />
-<div style="clear:both;"></div>
+<h1 id="Reconstruction-Principle">Reconstruction Principle<a class="anchor-link" href="#Reconstruction-Principle">&#182;</a></h1><img src="img/iter1.gif" alt="projection" style="width:20%;float:left;margin-right:5%;margin-left:2.5%;margin-bottom:1em;margin-top:1em;" />
+<img src="img/iter2.gif" alt="back-projection" style="width:20%;float:left;margin-right:5%;margin-bottom:1em;margin-top:1em;" />
+<p style="clear: both; font-size: small; text-align: right; margin-top:1em;">images source: <a href="https://tomograp.web.cern.ch/home_page/iter_tomo/iter_tomo/">CERN tomography website</a></p>
 <p>projection (measurement) $\implies$ back-projection (reconstruction)</p>
 <p>(Require $ N_{meas} \gtrsim \pi\cdot\frac{\text{total diameter}}{\text{pixel size}}$)</p>
 
@@ -14919,11 +14919,11 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Reconstruction-Principle">Reconstruction Principle<a class="anchor-link" href="#Reconstruction-Principle">&#182;</a></h1><img src="img/iter1.gif" alt="projection" style="width:20%;float:left;margin-right:5%;margin-left:2.5%;margin-bottom:1em;" />
-<img src="img/iter2.gif" alt="back-projection" style="width:20%;float:left;margin-right:5%;margin-bottom:1em;" />
-<img src="img/iter3.gif" alt="back-projection" style="width:20%;float:left;margin-right:5%;margin-bottom:1em;" />
-<img src="img/iter4.gif" alt="back-projection" style="width:20%;float:left;margin-bottom:1em;" />
-<div style="clear:both;"></div>
+<h1 id="Reconstruction-Principle">Reconstruction Principle<a class="anchor-link" href="#Reconstruction-Principle">&#182;</a></h1><img src="img/iter1.gif" alt="projection" style="width:20%;float:left;margin-right:5%;margin-left:2.5%;margin-bottom:1em;margin-top:1em;" />
+<img src="img/iter2.gif" alt="back-projection" style="width:20%;float:left;margin-right:5%;margin-bottom:1em;margin-top:1em;" />
+<img src="img/iter3.gif" alt="back-projection" style="width:20%;float:left;margin-right:5%;margin-bottom:1em;margin-top:1em;" />
+<img src="img/iter4.gif" alt="back-projection" style="width:20%;float:left;margin-bottom:1em;margin-top:1em;" />
+<p style="clear: both; font-size: small; text-align: right; margin-top:1em;">images source: <a href="https://tomograp.web.cern.ch/home_page/iter_tomo/iter_tomo/">CERN tomography website</a></p>
 <p>projection (measurement) $\implies$ back-projection (reconstruction)</p>
 <p>$\stackrel{\text{improve}}{\implies}$ re-projection (red) $\implies$ iteratively reduce discrepancy</p>
 
@@ -15595,8 +15595,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/dist/reveal.js",
-      "reveal.js/plugin/notes/notes.js"
+      "https://unpkg.com/reveal.js@4.0.2/dist/reveal.js",
+      "https://unpkg.com/reveal.js@4.0.2/plugin/notes/notes.js"
     ],
 
     function(Reveal, RevealNotes){
