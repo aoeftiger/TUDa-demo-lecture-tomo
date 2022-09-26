@@ -5,6 +5,7 @@ warnings.filterwarnings('ignore')
 import numpy as np
 np.random.seed(0)
 
+import matplotlib
 import matplotlib.pyplot as plt
 from tqdm.notebook import tqdm
 
